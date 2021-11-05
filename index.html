@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html >
+<head>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/misFunciones.js"></script>  
+    <title>CABIN</title>
+</head>
+
+<body>
+    <h1> Reto 4 </h1>
+    <h2>Categoria </h2>
+    <div id="resultado1"></div>
+    <script type="text/javascript"> 
+    window.onload = autoInicioCategoria();
+    </script>
+    <div>
+        <input type="text" id="Cname" placeholder="nombre">
+        <input type="text" id="Cdescription" placeholder="descripcion">
+  
+    </div>
+    <button onclick="guardarInformacionCategorias()">Guardar Categoria</button>
+    <button onclick="traerInformacionCategoria()"> Consultar Categoria</button>
+    
+<!--Tabla Cabin-->
+    <h2> Cabin </h2>
+    <div id="resultado2"></div>
+    <script type="text/javascript"> 
+    window.onload = autoInicioCabin();
+    </script>
+    <div>
+        <input type="text" id="Cname" placeholder="nombre">
+        <input type="text" id="Cbrand" placeholder="marca">
+        <input type="number" id="Cyear" placeholder="año">
+        <input type="text" id="Cdescription" placeholder="descripcion">
+        <!-- <input date= -->
+        <select name="category" id="select-category" placeholder="category_id"></select>
+    </div>
+    <button onclick="guardarInformacionCabin()">Guardar Cabin</button>
+    <button onclick="traerInformacionCabin()"> Consultar Cabin</button>
+   
+<!--Tabla Cliente-->
+<h2>Cliente </h2>
+<div id="resultado3"></div>
+<script type="text/javascript"> 
+window.onload = autoInicioCliente();
+</script>
+<div>
+    <input type="text" id="Clemail" placeholder="email">
+    <input type="text" id="Clpassword" placeholder="password">
+    <input type="text" id="Clname" placeholder="nombre">
+    <input type="number" id="Clage" placeholder="edad">
+</div>
+<button onclick="guardarInformacionCliente()">Guardar Cliente</button>
+<button onclick="traerInformacionCliente()"> Consultar Cliente</button>
+  
+
+</body>
+
+
+</html>
